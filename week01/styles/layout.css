@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --header-and-footer-background: #0b2545;
+    --nav-background: #13315c;
+    --main-background: #eef4ed;
+    --aside-background: #8da9c4;
+    --text-colour1: #fcfcfc;
+    --text-colour2: navy;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: "header header"
+        "main aside"
+        "footer footer";
+}
+
+header {
+    min-height: 5rem;
+    grid-area: header;
+    background-color: var(--header-and-footer-background);
+    color: var(--text-colour1);
+}
+
+header h1 {
+    padding: 1rem;
+}
+
+nav {
+    padding: .5rem;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--nav-background);
+    color: var(--text-colour1);
+}
+
+nav a {
+    color: var(--text-colour1);
+    text-decoration: none;
+}
+
+main {
+    padding: 1rem;
+    min-height: 15rem;
+    grid-area: main;
+    background-color: var(--main-background);
+    color: var(--text-colour2);
+}
+
+aside {
+    padding: 1rem;
+    grid-area: aside;
+    background-color: var(--aside-background);
+    color: var(--text-colour2);
+}
+
+footer {
+    padding: 1rem;
+    min-height: 5rem;
+    grid-area: footer;
+    background-color: var(--header-and-footer-background);
+    color: var(--text-colour1);
+    text-align: center;
+}

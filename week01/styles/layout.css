@@ -14,11 +14,13 @@
 }
 
 body {
+    min-height: 100vh;
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-areas: "header header"
         "main aside"
         "footer footer";
+    grid-template-rows: auto 1fr auto;
 }
 
 header {

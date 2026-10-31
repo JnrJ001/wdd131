@@ -4,11 +4,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <meta name="description"
+        content="This is the landing page of James Junior's profile, a student at BYU studying WDD 131 - Dynamic Web Fundamentals.">
+    <meta name="author" content="James Junior">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+    <title>WDD 131 - Dynamic Web Fundamentals - James Junior</title>
 </head>
 
 <body>
-    <h1>WDD 131 | JAMES JUNIOR</h1>
+    <header>
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+        <nav>
+            <a href="https://www.linkedin.com">LinkedIn</a>
+            <a href="https://byupw.instructure.com/">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <h1>James M. G. Junior</h1>
+        <section class="card">
+            <h2>About Me</h2>
+            <img src="images/profile.jpg" alt="Profile image of James Junior" width="400" height="500">
+            <p>My name is James M. G. Junior and I go by James or Junior. I am a student. I am studying web
+            development to help me build a startup business. Outside of school, I love basketball and one day I want to travel around the world to explore the different and diverse cultures out there.
+            </p>
+            <h3>Ghana</h3>
+            <figure>
+                <img src="images/Ghana-Flag.jpg" alt="Flag of Ghana" width="300" height="200">
+                <figcaption>Official Flag of Ghana</figcaption>
+            </figure>
+            <p>Ghana is a country in West Africa on the Gulf of Guinea, and its capital is Accra. In 1957 it became the first country
+            in sub-Saharan Africa to gain independence from colonial rule. Ghana is known for its gold, cocoa, colourful kente
+            cloth, jollof rice and its football team, the Black Stars. It is also home to Lake Volta, one of the largest man-made
+            lakes in the world.</p>
+        </section>
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li>
+                    <a href="https://developer.mozilla.org">MDN Web Docs</a>
+                </li>
+                <li>
+                    <a href="https://www.w3schools.com">W3Schools</a>
+                </li>
+                <li>
+                    <a href="https://www.freecodecamp.org">freeCodeCamp</a>
+                </li>
+                <li>
+                    <a href="https://css-tricks.com">CSS-Tricks</a>
+                </li>
+                <li>
+                    <a href="https://validator.w3.org">W3C Validator</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> James Junior | Ghana</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 
 </html>

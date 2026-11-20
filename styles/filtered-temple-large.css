@@ -1,0 +1,17 @@
+@media (min-width: 700px) {
+    #temples {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 900px) {
+    #menu {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+}

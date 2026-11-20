@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A gallery of temples from around the world to browse.">
+    <meta name="author" content="James Junior">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temple.css">
+    <link rel="stylesheet" href="styles/filtered-temple-large.css">
+    <script src="scripts/filtered-temple.js" defer></script>
+    <title>Temple Album</title>
+</head>
+
+<body>
+    <header>
+        <h2>Temple Album</h2>
+        <button id="menu" aria-label="Toggle menu">☰</button>
+        <nav id="navmenu">
+            <a href="#" data-filter="home">HOME</a>
+            <a href="#" data-filter="old">OLD</a>
+            <a href="#" data-filter="new">NEW</a>
+            <a href="#" data-filter="large">LARGE</a>
+            <a href="#" data-filter="small">SMALL</a>
+        </nav>
+    </header>
+    <main>
+        <h1>HOME</h1>
+        <div id="temples"></div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> James Junior | Ghana</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

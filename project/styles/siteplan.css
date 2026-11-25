@@ -1,0 +1,53 @@
+:root {
+    --navy: #00205b;
+    --gold: #d49a00;
+    --white: #ffffff;
+    --light-gray: #f4f4f4;
+    --font-primary: 'Montserrat';
+    --font-heading: 'Anton';
+}
+
+body {
+    font-family: var(--font-primary), sans-serif;
+    color: var(--navy);
+    background-color: var(--white);
+    margin: 0;
+}
+
+header,
+footer {
+    background-color: var(--navy);
+    color: var(--white);
+    padding: 1rem;
+    text-align: center;
+}
+
+header img {
+    max-width: 250px;
+    height: auto;
+    background-color: var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+}
+
+h1,
+h2 {
+    font-family: var(--font-heading), sans-serif;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+section {
+    background-color: var(--light-gray);
+    border-left: 4px solid var(--gold);
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+section img {
+    max-width: 100%;
+    height: auto;
+}
